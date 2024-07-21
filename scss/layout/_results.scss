@@ -1,0 +1,38 @@
+.results-section {
+    padding: 2em 0;
+    text-align: center;
+
+    .results {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .result-item {
+            border: 1px solid #ccc;
+            margin: 1em;
+            padding: 1em;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 200px;
+            background-color: #fff;
+            box-shadow: $box-shadow;
+
+            img {
+                max-width: 100%;
+                height: auto;
+                margin-bottom: 1em;
+            }
+
+            button {
+                margin-top: auto;
+                background-color: $secondary-color;
+                border: none;
+                color: $text-color;
+                padding: 0.5em 1em;
+                cursor: pointer;
+            }
+        }
+    }
+}

@@ -12,30 +12,86 @@
   </head>
   <body>
     <header>
-      <h1>Mi Tienda en Línea</h1>
-      <nav>
-        <ul>
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#">Productos</a></li>
-          <li><a href="#">Carrito</a></li>
-          <li><a href="#">Contacto</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section class="productos">
-        <h2>Productos Destacados</h2>
-        <div class="producto">
-          <img src="ruta/imagen.jpg" alt="Producto 1" />
-          <h3>Producto 1</h3>
-          <p>$10.00</p>
-          <button class="agregar-carrito">Agregar al Carrito</button>
+      <div class="container">
+        <div class="logo">
+          <h1>Reservas Online</h1>
         </div>
-        <!-- Repite para otros productos -->
-      </section>
-    </main>
+        <nav>
+          <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Alojamientos</a></li>
+            <li><a href="#">Reservas</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="search-section">
+      <div class="container">
+          <h2>Buscar Alojamientos</h2>
+          <form id="search-form">
+              <div class="form-group">
+                  <label for="destino">Destino:</label>
+                  <input type="text" id="destino" name="destino">
+              </div>
+              <div class="form-group">
+                  <label for="checkin">Check-in:</label>
+                  <input type="date" id="checkin" name="checkin">
+              </div>
+              <div class="form-group">
+                  <label for="checkout">Check-out:</label>
+                  <input type="date" id="checkout" name="checkout">
+              </div>
+              <div class="form-group">
+                  <label for="huespedes">Huéspedes:</label>
+                  <input type="number" id="huespedes" name="huespedes" min="1" max="10">
+              </div>
+              <button type="submit">Buscar</button>
+          </form>
+      </div>
+    </section> 
+      <div class="container">
+        <h2>Resultados de la Búsqueda</h2>
+        <div class="results">
+          <div class="result-item">
+              <img src="ruta/imagen.jpg" alt="Alojamiento 1">
+              <h3>Alojamiento 1</h3>
+              <p>Descripción breve del alojamiento.</p>
+              <p>Precio por noche: $100</p>
+              <button>Reservar</button>
+          </div>          
+        </div>
+      </div>
+    </section>
+    <section class="accommodation-info">
+      <div class="container">
+          <h2>Información del Alojamiento</h2>
+          <div class="accommodation-details">
+              <img src="ruta/imagen.jpg" alt="Alojamiento 1">
+              <h3>Alojamiento 1</h3>
+              <p>Descripción completa del alojamiento.</p>
+              <ul>
+                  <li>Servicio 1</li>
+                  <li>Servicio 2</li>
+                  <li>Servicio 3</li>
+              </ul>
+              <p>Precio por noche: $100</p>
+              <button>Reservar</button>
+          </div>
+      </div>
+    </section>
     <footer>
-      <p>&copy; 2024: SastreMaximiliano. Tienda New Style</p>
-    </footer>    
+      <div class="container">
+          <p>&copy; 2024 Reservas Online NewStyle. Todos los derechos reservados.</p>
+          <nav>
+              <ul>
+                  <li><a href="#">Política de Privacidad</a></li>
+                  <li><a href="#">Términos de Servicio</a></li>
+                  <li><a href="#">Contacto</a></li>
+              </ul>
+          </nav>
+      </div>
+    </footer>
+    <script src="./javascript/index.js"></script>
   </body>
 </html>

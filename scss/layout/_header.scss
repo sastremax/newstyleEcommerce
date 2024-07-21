@@ -1,0 +1,27 @@
+header {
+    background-color: $primary-color;
+    color: $text-color;
+    padding: 1em 0;
+    text-align: center;
+
+    .logo h1 {
+        margin: 0;
+    }
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+
+    nav ul li {
+        margin: 0 1em;
+    }
+
+    nav ul li a {
+        color: $text-color;
+        text-decoration: none;
+    }
+}
